@@ -1,10 +1,44 @@
 body{
   height: 90  vh;
   width: 95vw;
+  background-color: #28D538;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  
+  justify-content: center;
+  margin: 70px;
+  padding: 50px;
+  border:30px;
+  background-image: url('img/grama.jpg');
+  
+  color:white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  border-radius: 10px;
+  width: 50%;
+  
+}
+
+.jogo{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:white;
-  color: rgb(52, 165, 52);
+  color: #81b214;
+  border: 10px;
+  padding-left: 20px;
+  margin-right: ;
+}
+
+.score{
+  display: flex;
+  flex-direction:column ;
+  text-align: justify;
+  align-items:center;
+  border:30px
 }

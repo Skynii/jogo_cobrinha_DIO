@@ -6,15 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
   <title>Jogo da Cobrinha</title>
 </head>
 
 <body>
 
-  <h1> Jogo da Cobrinha!</h1>
-  <canvas id="snake" width="521" height="512"></canvas><!--Trabalha o 2D ou 3d-->
+<div class="container">
+  <div class="jogo">
+    <canvas id="snake" width="521" height="512"></canvas><!--Trabalha o 2D ou 3d-->
+  </div>
 
- 
+  <div class="score">
+    <h1> Jogo da Cobrinha!</h1>
+    <h2>Regras do Jogo</h2>
+    <p> Você deve guiar a cobrinha até a sua comida. Cada vez que comer uma frutinha,  você crecerá um pouquinho!</p>
+    <p> Mas cuidado! Não encoste no seu próprio corpo ou você poderá morrer! Quanto maior ficar, maior a chance de morrer!</p>
+    <p>Qual o máximo de comida que você conseguira comer?!</p>
+  </div>
+</div>
 </body>
 
 </html>

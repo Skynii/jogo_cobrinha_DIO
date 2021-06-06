@@ -13,13 +13,13 @@ let food = {
 }
 
 function criarBG(){ //desenha o fundo  e preencha 1º//
-    context.fillStyle= "lightgreen";
+    context.fillStyle= "#43C44F";
     context.fillRect (0, 0, 16 *box, 16*box); //altura e largura de 16 quadradinhos//
   }
 
 function criarCobrinha(){ //CRIOU COBRINHA VERDE 2º
   for(i = 0; i < snake.length; i++){
-    context.fillStyle="green";
+    context.fillStyle="#54e346";
     context.fillRect(snake[i].x, snake[i].y, box, box);
   }
 }
@@ -40,6 +40,7 @@ function update(event){
 
 
 function iniciarJogo(){ // vai atualizar o jogo no intervalo de tempo 3º
+  
 
   if(snake[0].x > 15*box && direction == "right") snake[0].x = 0;
   if(snake[0].x < 0 && direction == 'left') snake[0].x = 16 * box;
@@ -83,3 +84,4 @@ function iniciarJogo(){ // vai atualizar o jogo no intervalo de tempo 3º
 }
 
 let jogo = setInterval(iniciarJogo, 100);
+
